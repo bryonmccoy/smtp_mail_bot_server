@@ -8,8 +8,8 @@ class MailHandler:
         # coming in to where it should, as in kianbrose.com which
         # is my domain. Technically not fully necessary but nice
         # to have.
-        if not address.endswith('@kianbrose.com'):
-            print("Address does not end with @kianbrose.com")
+        if not address.endswith('@dreaddough.com'):
+            print("Address does not end with @dreaddough.com")
             return '550 not relaying to that domain'
         envelope.rcpt_tos.append(address)
         return '250 OK'
